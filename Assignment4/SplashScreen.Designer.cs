@@ -1,6 +1,6 @@
 ﻿namespace Assignment4
 {
-    partial class Form1
+    partial class SplashScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // SplashScreen
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.BackgroundImage = global::Assignment4.Properties.Resources.MyComputer;
+            this.ClientSize = new System.Drawing.Size(411, 261);
+            this.ControlBox = false;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "SplashScreen";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "SplashScreen";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
