@@ -170,7 +170,7 @@
             // 
             // conditionLabel
             // 
-            this.conditionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.conditionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conditionLabel.Location = new System.Drawing.Point(9, 31);
             this.conditionLabel.Name = "conditionLabel";
             this.conditionLabel.Size = new System.Drawing.Size(87, 13);
@@ -180,7 +180,7 @@
             // 
             // platformLabel
             // 
-            this.platformLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.platformLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.platformLabel.Location = new System.Drawing.Point(223, 31);
             this.platformLabel.Name = "platformLabel";
             this.platformLabel.Size = new System.Drawing.Size(68, 16);
@@ -190,7 +190,7 @@
             // 
             // manufacturerLabel
             // 
-            this.manufacturerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manufacturerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.manufacturerLabel.Location = new System.Drawing.Point(6, 77);
             this.manufacturerLabel.Name = "manufacturerLabel";
             this.manufacturerLabel.Size = new System.Drawing.Size(90, 16);
@@ -200,7 +200,7 @@
             // 
             // modelLabel
             // 
-            this.modelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.modelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modelLabel.Location = new System.Drawing.Point(223, 77);
             this.modelLabel.Name = "modelLabel";
             this.modelLabel.Size = new System.Drawing.Size(68, 16);
@@ -242,7 +242,7 @@
             // 
             // sizeLabel
             // 
-            this.sizeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sizeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sizeLabel.Location = new System.Drawing.Point(12, 25);
             this.sizeLabel.Name = "sizeLabel";
             this.sizeLabel.Size = new System.Drawing.Size(84, 14);
@@ -252,7 +252,7 @@
             // 
             // memoryLabel
             // 
-            this.memoryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.memoryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.memoryLabel.Location = new System.Drawing.Point(12, 52);
             this.memoryLabel.Name = "memoryLabel";
             this.memoryLabel.Size = new System.Drawing.Size(84, 18);
@@ -262,7 +262,7 @@
             // 
             // cpuBrandLabel
             // 
-            this.cpuBrandLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cpuBrandLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cpuBrandLabel.Location = new System.Drawing.Point(12, 79);
             this.cpuBrandLabel.Name = "cpuBrandLabel";
             this.cpuBrandLabel.Size = new System.Drawing.Size(84, 18);
@@ -272,7 +272,7 @@
             // 
             // cpuTypeLabel
             // 
-            this.cpuTypeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cpuTypeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cpuTypeLabel.Location = new System.Drawing.Point(12, 107);
             this.cpuTypeLabel.Name = "cpuTypeLabel";
             this.cpuTypeLabel.Size = new System.Drawing.Size(84, 18);
@@ -282,7 +282,7 @@
             // 
             // cpuNumberLabel
             // 
-            this.cpuNumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cpuNumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cpuNumberLabel.Location = new System.Drawing.Point(12, 135);
             this.cpuNumberLabel.Name = "cpuNumberLabel";
             this.cpuNumberLabel.Size = new System.Drawing.Size(95, 18);
@@ -292,7 +292,7 @@
             // 
             // cpuSpeedLabel
             // 
-            this.cpuSpeedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cpuSpeedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cpuSpeedLabel.Location = new System.Drawing.Point(12, 165);
             this.cpuSpeedLabel.Name = "cpuSpeedLabel";
             this.cpuSpeedLabel.Size = new System.Drawing.Size(84, 18);
@@ -302,7 +302,7 @@
             // 
             // hddLabel
             // 
-            this.hddLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hddLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hddLabel.Location = new System.Drawing.Point(12, 192);
             this.hddLabel.Name = "hddLabel";
             this.hddLabel.Size = new System.Drawing.Size(84, 18);
@@ -312,7 +312,7 @@
             // 
             // gpuTypeLabel
             // 
-            this.gpuTypeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpuTypeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpuTypeLabel.Location = new System.Drawing.Point(12, 220);
             this.gpuTypeLabel.Name = "gpuTypeLabel";
             this.gpuTypeLabel.Size = new System.Drawing.Size(84, 18);
@@ -322,7 +322,7 @@
             // 
             // webCamLabel
             // 
-            this.webCamLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.webCamLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.webCamLabel.Location = new System.Drawing.Point(12, 248);
             this.webCamLabel.Name = "webCamLabel";
             this.webCamLabel.Size = new System.Drawing.Size(84, 13);
@@ -332,7 +332,7 @@
             // 
             // osLabel
             // 
-            this.osLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.osLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.osLabel.Location = new System.Drawing.Point(12, 271);
             this.osLabel.Name = "osLabel";
             this.osLabel.Size = new System.Drawing.Size(84, 18);
@@ -366,27 +366,30 @@
             // 
             // label1
             // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(7, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 24);
+            this.label1.Size = new System.Drawing.Size(132, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Price";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
             // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(7, 49);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 27);
+            this.label2.Size = new System.Drawing.Size(132, 27);
             this.label2.TabIndex = 1;
             this.label2.Text = "Sales Tax (13%)";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label3
             // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(7, 93);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 22);
+            this.label3.Size = new System.Drawing.Size(132, 22);
             this.label3.TabIndex = 2;
             this.label3.Text = "Total";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
