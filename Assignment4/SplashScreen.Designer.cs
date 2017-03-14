@@ -28,7 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.splashFormTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
+            // 
+            // splashFormTimer
+            // 
+            this.splashFormTimer.Enabled = true;
+            this.splashFormTimer.Interval = 3000;
             // 
             // SplashScreen
             // 
@@ -48,6 +55,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer splashFormTimer;
     }
 }
 
