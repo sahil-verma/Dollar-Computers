@@ -73,6 +73,16 @@ namespace Assignment4.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hack_any_computer {
+            get {
+                object obj = ResourceManager.GetObject("hack-any-computer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MyComputer {
             get {
                 object obj = ResourceManager.GetObject("MyComputer", resourceCulture);
