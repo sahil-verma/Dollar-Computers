@@ -32,7 +32,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.newOrderButton = new System.Windows.Forms.Button();
             this.savedOrderButton = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,6 +64,7 @@
             this.newOrderButton.TabIndex = 2;
             this.newOrderButton.Text = "Start a New Order";
             this.newOrderButton.UseVisualStyleBackColor = true;
+            this.newOrderButton.Click += new System.EventHandler(this.newOrderButton_Click);
             // 
             // savedOrderButton
             // 
@@ -74,16 +75,18 @@
             this.savedOrderButton.TabIndex = 3;
             this.savedOrderButton.Text = "Open a Saved Order";
             this.savedOrderButton.UseVisualStyleBackColor = true;
+            this.savedOrderButton.Click += new System.EventHandler(this.savedOrderButton_Click);
             // 
-            // button3
+            // exitButton
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(79, 308);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(159, 31);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Exit";
-            this.button3.UseVisualStyleBackColor = true;
+            this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitButton.Location = new System.Drawing.Point(79, 308);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(159, 31);
+            this.exitButton.TabIndex = 4;
+            this.exitButton.Text = "Exit";
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // StartForm
             // 
@@ -91,15 +94,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(331, 355);
             this.ControlBox = false;
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.exitButton);
             this.Controls.Add(this.savedOrderButton);
             this.Controls.Add(this.newOrderButton);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "StartForm";
-            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Welcome to Dollar Computer!";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -112,6 +113,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button newOrderButton;
         private System.Windows.Forms.Button savedOrderButton;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button exitButton;
     }
 }

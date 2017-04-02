@@ -16,5 +16,15 @@ namespace Assignment4
         {
             InitializeComponent();
         }
+
+        private void splashFormTimer_Tick(object sender, EventArgs e)
+        {
+            //1. intantiate 
+            StartForm selectionForm = new StartForm();
+
+            this.splashFormTimer.Enabled = false;
+            selectionForm.Show();
+            this.Hide();
+        }
     }
 }

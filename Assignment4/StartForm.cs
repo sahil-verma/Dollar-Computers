@@ -12,9 +12,33 @@ namespace Assignment4
 {
     public partial class StartForm : Form
     {
+
         public StartForm()
         {
             InitializeComponent();
+        }
+
+        private void newOrderButton_Click(object sender, EventArgs e)
+        {
+            SelectForm selectForm = new SelectForm();
+
+            selectForm.previousForm = this;
+            selectForm.Show();
+            this.Hide();
+        }
+
+        private void savedOrderButton_Click(object sender, EventArgs e)
+        {
+            SelectForm selectForm = new SelectForm();
+
+            selectForm.previousForm = this;
+            selectForm.Show();
+            this.Hide();
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
