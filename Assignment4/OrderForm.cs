@@ -19,5 +19,11 @@ namespace Assignment4
         {
             InitializeComponent();
         }
+
+        private void _aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            orderAboutBox aboutApp = new orderAboutBox();
+            aboutApp.ShowDialog();
+        }
     }
 }
