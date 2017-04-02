@@ -31,10 +31,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cancelButton = new System.Windows.Forms.Button();
             this.nextButton = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.selectionTextBox = new System.Windows.Forms.TextBox();
+            this.productsDataGridView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.productsDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -56,9 +56,11 @@
             this.cancelButton.TabIndex = 3;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
             // nextButton
             // 
+            this.nextButton.Enabled = false;
             this.nextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nextButton.Location = new System.Drawing.Point(590, 334);
             this.nextButton.Name = "nextButton";
@@ -66,15 +68,7 @@
             this.nextButton.TabIndex = 4;
             this.nextButton.Text = "Next";
             this.nextButton.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 39);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(653, 266);
-            this.dataGridView1.TabIndex = 5;
+            this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
             // 
             // label2
             // 
@@ -87,13 +81,24 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Dollar Computer Hardware List";
             // 
-            // textBox1
+            // selectionTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(141, 326);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(285, 20);
-            this.textBox1.TabIndex = 7;
+            this.selectionTextBox.Location = new System.Drawing.Point(141, 326);
+            this.selectionTextBox.Name = "selectionTextBox";
+            this.selectionTextBox.ReadOnly = true;
+            this.selectionTextBox.Size = new System.Drawing.Size(285, 20);
+            this.selectionTextBox.TabIndex = 7;
+            // 
+            // productsDataGridView
+            // 
+            this.productsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.productsDataGridView.Location = new System.Drawing.Point(13, 50);
+            this.productsDataGridView.Name = "productsDataGridView";
+            this.productsDataGridView.ReadOnly = true;
+            this.productsDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.productsDataGridView.Size = new System.Drawing.Size(652, 270);
+            this.productsDataGridView.TabIndex = 8;
+            this.productsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.productsDataGridView_CellContentClick);
             // 
             // SelectForm
             // 
@@ -101,18 +106,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(677, 377);
             this.ControlBox = false;
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.productsDataGridView);
+            this.Controls.Add(this.selectionTextBox);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.nextButton);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.label1);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "SelectForm";
-            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Select Your Computer";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productsDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -122,8 +125,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.Button nextButton;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox selectionTextBox;
+        private System.Windows.Forms.DataGridView productsDataGridView;
     }
 }

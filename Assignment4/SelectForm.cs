@@ -19,5 +19,40 @@ namespace Assignment4
         {
             InitializeComponent();
         }
+
+        private void _storingValue()
+        {
+
+        }
+
+        private void productsDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0)
+            {
+                return;
+            }
+            else
+            {
+                selectionTextBox.Text = productsDataGridView.SelectedRows.ToString();
+            }
+
+            int index = e.RowIndex;
+            productsDataGridView.Rows[index].Selected = true;
+            nextButton.Enabled = true;
+        }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void nextButton_Click(object sender, EventArgs e)
+        {
+            ProductInfoForm productInfoForm = new ProductInfoForm();
+
+            productInfoForm.firstForm = this;
+            productInfoForm.Show();
+            this.Close();
+        }
     }
 }
