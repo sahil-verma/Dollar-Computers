@@ -20,9 +20,12 @@ namespace Assignment4
             InitializeComponent();
         }
 
-        private void _productsDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void _productsDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            if ()
+            {
 
+            }
         }
 
         private void _storingValue()
@@ -47,5 +50,16 @@ namespace Assignment4
             this.Hide();
         }
 
+        private void SelectForm_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'dollarComputersDataSet.products' table. You can move, or remove it, as needed.
+            this.productsTableAdapter.Fill(this.dollarComputersDataSet.products);
+
+        }
+
+        private void productsDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

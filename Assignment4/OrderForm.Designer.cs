@@ -502,10 +502,8 @@
             this.Controls.Add(this.componentsGroupBox);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "OrderForm";
-            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Complete Your Order";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
