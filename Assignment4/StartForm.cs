@@ -29,9 +29,12 @@ namespace Assignment4
 
         private void savedOrderButton_Click(object sender, EventArgs e)
         {
+            //1. intantiate 
             SelectForm selectForm = new SelectForm();
 
+            //2. pass a reference
             selectForm.previousForm = this;
+
             selectForm.Show();
             this.Hide();
         }

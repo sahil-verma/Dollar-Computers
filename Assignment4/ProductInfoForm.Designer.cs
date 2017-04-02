@@ -117,12 +117,14 @@
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveToolStripMenuItem.Text = "&Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this._saveToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this._cancelButton_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -489,6 +491,7 @@
             this.anotherProductButton.TabIndex = 10;
             this.anotherProductButton.Text = "Select Another Product";
             this.anotherProductButton.UseVisualStyleBackColor = true;
+            this.anotherProductButton.Click += new System.EventHandler(this._anotherProductButton_Click);
             // 
             // cancelButton
             // 
@@ -499,6 +502,7 @@
             this.cancelButton.TabIndex = 11;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.Click += new System.EventHandler(this._cancelButton_Click);
             // 
             // nextButton
             // 
@@ -509,6 +513,7 @@
             this.nextButton.TabIndex = 12;
             this.nextButton.Text = "Next";
             this.nextButton.UseVisualStyleBackColor = true;
+            this.nextButton.Click += new System.EventHandler(this._nextButton_Click);
             // 
             // ProductInfoForm
             // 
@@ -530,10 +535,8 @@
             this.Controls.Add(this.productIDLabel);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "ProductInfoForm";
-            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Product Information Form";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

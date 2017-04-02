@@ -56,11 +56,10 @@
             this.cancelButton.TabIndex = 3;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
-            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
+            this.cancelButton.Click += new System.EventHandler(this._cancelButton_click);
             // 
             // nextButton
             // 
-            this.nextButton.Enabled = false;
             this.nextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nextButton.Location = new System.Drawing.Point(590, 334);
             this.nextButton.Name = "nextButton";
@@ -68,7 +67,7 @@
             this.nextButton.TabIndex = 4;
             this.nextButton.Text = "Next";
             this.nextButton.UseVisualStyleBackColor = true;
-            this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
+            this.nextButton.Click += new System.EventHandler(this._nextButton_Click);
             // 
             // label2
             // 
@@ -98,7 +97,7 @@
             this.productsDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.productsDataGridView.Size = new System.Drawing.Size(652, 270);
             this.productsDataGridView.TabIndex = 8;
-            this.productsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.productsDataGridView_CellContentClick);
+            this.productsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this._productsDataGridView_CellContentClick);
             // 
             // SelectForm
             // 

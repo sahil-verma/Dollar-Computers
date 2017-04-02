@@ -12,6 +12,9 @@ namespace Assignment4
 {
     public partial class OrderForm : Form
     {
+        //3. create a reference to the previous form
+        public ProductInfoForm secondForm;
+
         public OrderForm()
         {
             InitializeComponent();

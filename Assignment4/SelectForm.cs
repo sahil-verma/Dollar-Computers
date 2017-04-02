@@ -20,39 +20,32 @@ namespace Assignment4
             InitializeComponent();
         }
 
+        private void _productsDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         private void _storingValue()
         {
 
         }
 
-        private void productsDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex < 0)
-            {
-                return;
-            }
-            else
-            {
-                selectionTextBox.Text = productsDataGridView.SelectedRows.ToString();
-            }
-
-            int index = e.RowIndex;
-            productsDataGridView.Rows[index].Selected = true;
-            nextButton.Enabled = true;
-        }
-
-        private void cancelButton_Click(object sender, EventArgs e)
+        private void _cancelButton_click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void nextButton_Click(object sender, EventArgs e)
+        private void _nextButton_Click(object sender, EventArgs e)
         {
+            //1. intantiate 
             ProductInfoForm productInfoForm = new ProductInfoForm();
 
+            //2. pass a reference
             productInfoForm.firstForm = this;
+
             productInfoForm.Show();
-            this.Close();
+            this.Hide();
         }
+
     }
 }
