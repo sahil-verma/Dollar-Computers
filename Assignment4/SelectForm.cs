@@ -22,9 +22,9 @@ namespace Assignment4
 
         private void _productsDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if ()
+            if (productsDataGridView.SelectedCells.Count > 0)
             {
-
+                selectionTextBox.Text = productsDataGridView.Rows[e.RowIndex].Cells[2].FormattedValue.ToString() + " " + productsDataGridView.Rows[e.RowIndex].Cells[3].FormattedValue.ToString() + " Priced at: $" + productsDataGridView.Rows[e.RowIndex].Cells[1].FormattedValue.ToString();
             }
         }
 

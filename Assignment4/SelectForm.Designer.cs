@@ -119,10 +119,11 @@
             // 
             // selectionTextBox
             // 
+            this.selectionTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.selectionTextBox.Location = new System.Drawing.Point(141, 326);
             this.selectionTextBox.Name = "selectionTextBox";
             this.selectionTextBox.ReadOnly = true;
-            this.selectionTextBox.Size = new System.Drawing.Size(285, 20);
+            this.selectionTextBox.Size = new System.Drawing.Size(285, 22);
             this.selectionTextBox.TabIndex = 7;
             // 
             // productsDataGridView
