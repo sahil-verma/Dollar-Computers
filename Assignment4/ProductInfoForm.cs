@@ -17,6 +17,8 @@ namespace Assignment4
         //3. create a reference to the previous form
         public SelectForm firstForm;
 
+        private string[] productsDetails;
+
         //constructor
         public ProductInfoForm()
         {
@@ -38,9 +40,9 @@ namespace Assignment4
                    System.IO.StreamReader(openFileDialog.FileName);
 
                 // read the file and insert data into the productInfoForm
-                for (int i = 0; i < firstForm.stroingValues.Length; i++)
+                for (int i = 0; i < productsDetails.Length; i++)
                 {
-                    firstForm.stroingValues[i] = sr.ReadLine();
+                    productsDetails[i] = sr.ReadLine();
                 }
 
                 // fill data to form
@@ -80,9 +82,9 @@ namespace Assignment4
                 StreamWriter fs = new StreamWriter(saveFileDialog.FileName);
 
                 // write to the file 
-                for (int i = 0; i < firstForm.stroingValues.Length; i++)
+                for (int i = 0; i < productsDetails.Length; i++)
                 {
-                     fs.WriteLine(firstForm.stroingValues[i]);
+                     fs.WriteLine(productsDetails[i]);
                 }
 
                 fs.Close();
@@ -121,6 +123,8 @@ namespace Assignment4
             cpuTypeTextBox.Text = firstForm.stroingValues[13];
             cpuSpeedTextBox.Text = firstForm.stroingValues[14];
             webCamTextBox.Text = firstForm.stroingValues[15];
+
+            this.productsDetails = firstForm.stroingValues;
         }
 
         /// <summary>
