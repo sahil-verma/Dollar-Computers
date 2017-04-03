@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -42,6 +43,7 @@ namespace Assignment4
             productIDTextBox.Text = firstForm.stroingValues[0];
             conditionTextBox.Text = firstForm.stroingValues[1];
             costTextBox.Text = firstForm.stroingValues[2];
+            costTextBox.Text = Double.Parse(costTextBox.Text).ToString("C", CultureInfo.CurrentCulture);
             platformTextBox.Text = firstForm.stroingValues[3];
             osTextBox.Text = firstForm.stroingValues[4];
             manufacturerTextBox.Text = firstForm.stroingValues[5];
@@ -64,8 +66,10 @@ namespace Assignment4
 
             //2. pass a reference
             orderForm.secondForm = this;
+            orderForm.firstForm = this.firstForm;
             orderForm.Show();
             this.Hide();
+            orderForm.storedValues();
         }
     }
 }

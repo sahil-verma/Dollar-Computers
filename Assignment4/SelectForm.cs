@@ -69,7 +69,6 @@ namespace Assignment4
 
             //2. pass a reference
             productInfoForm.firstForm = this;
-
             _storingValue();
 
             productInfoForm.Show();
