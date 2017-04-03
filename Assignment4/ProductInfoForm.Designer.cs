@@ -110,6 +110,7 @@
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.openToolStripMenuItem.Text = "&Open";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this._readFile);
             // 
             // saveToolStripMenuItem
             // 
@@ -519,11 +520,15 @@
             // 
             // openFileDialog
             // 
-            this.openFileDialog.FileName = "Product.txt";
+            this.openFileDialog.DefaultExt = "txt";
+            this.openFileDialog.FileName = "Product";
+            this.openFileDialog.Filter = "Text Files|*.txt";
             // 
             // saveFileDialog
             // 
-            this.saveFileDialog.FileName = "Product.txt";
+            this.saveFileDialog.DefaultExt = "txt";
+            this.saveFileDialog.FileName = "Product";
+            this.saveFileDialog.Filter = "Text Files|*.txt";
             // 
             // ProductInfoForm
             // 

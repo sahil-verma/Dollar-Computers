@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,10 +22,31 @@ namespace Assignment4
         {
             InitializeComponent();
 
-            SaveFileDialog openFileDialog = new SaveFileDialog();
-            openFileDialog.Filter = "Text Files | *.txt";
+        }
+
+        private void _readFile(Object sender, EventArgs e)
+        {
+
+            if (openFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                System.IO.StreamReader sr = new
+                   System.IO.StreamReader(openFileDialog.FileName);
+
+                // read the file and insert data into the productInfoForm
+                for (int i = 0; i < firstForm.stroingValues.Length; i++)
+                {
+                    firstForm.stroingValues[i] = sr.ReadLine();
+                }
+
+                // fill data to form
+                storedValues();
+
+                sr.Close();
+            }
+
+            openFileDialog.Filter = "Text Files|*.txt";
             openFileDialog.DefaultExt = "txt";
-            
+
         }
 
         private void _anotherProductButton_Click(object sender, EventArgs e)
@@ -35,36 +57,17 @@ namespace Assignment4
 
         private void _saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // Displays a SaveFileDialog so the user can save the Image  
-            // assigned to Button2.  
-            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.Filter = "Text Files | *.txt";
-            saveFileDialog1.Title = "Save a File";
-            saveFileDialog1.ShowDialog();
 
             // If the file name is not an empty string open it for saving.  
-            if (saveFileDialog1.FileName != "")
+            if (saveFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 // Saves the Image via a FileStream created by the OpenFile method.  
-                System.IO.FileStream fs =
-                   (System.IO.FileStream)saveFileDialog1.OpenFile();
+                StreamWriter fs = new StreamWriter(saveFileDialog.FileName);
 
-                switch (saveFileDialog1.FilterIndex)
+                // write to the file 
+                for (int i = 0; i < firstForm.stroingValues.Length; i++)
                 {
-                    case 1:
-                        this.productIDLabel.Image.Save(fs,
-                           System.Drawing.Imaging.ImageFormat.Jpeg);
-                        break;
-
-                    case 2:
-                        this.productIDLabel.Image.Save(fs,
-                           System.Drawing.Imaging.ImageFormat.Bmp);
-                        break;
-
-                    case 3:
-                        this.productIDLabel.Image.Save(fs,
-                           System.Drawing.Imaging.ImageFormat.Gif);
-                        break;
+                     fs.WriteLine(firstForm.stroingValues[i]);
                 }
 
                 fs.Close();
