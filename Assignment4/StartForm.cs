@@ -18,7 +18,7 @@ namespace Assignment4
             InitializeComponent();
         }
 
-        private void newOrderButton_Click(object sender, EventArgs e)
+        private void _newOrderButton_Click(object sender, EventArgs e)
         {
             SelectForm selectForm = new SelectForm();
 
@@ -27,19 +27,21 @@ namespace Assignment4
             this.Hide();
         }
 
-        private void savedOrderButton_Click(object sender, EventArgs e)
+        private void _savedOrderButton_Click(object sender, EventArgs e)
         {
-            //1. intantiate 
-            SelectForm selectForm = new SelectForm();
-
-            //2. pass a reference
-            selectForm.previousForm = this;
-
-            selectForm.Show();
             this.Hide();
+            ProductInfoForm productInfoForm = new ProductInfoForm();
+            productInfoForm.Show();
+            if (startOpenFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                System.IO.StreamReader sr = new
+                   System.IO.StreamReader(startOpenFileDialog.FileName);
+                MessageBox.Show(sr.ReadToEnd());
+                sr.Close();
+            }
         }
 
-        private void exitButton_Click(object sender, EventArgs e)
+        private void _exitButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }

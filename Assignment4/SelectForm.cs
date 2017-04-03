@@ -27,6 +27,8 @@ namespace Assignment4
             {
                 selectionTextBox.Text = productsDataGridView.Rows[e.RowIndex].Cells[2].FormattedValue.ToString() + " " + productsDataGridView.Rows[e.RowIndex].Cells[3].FormattedValue.ToString() + " Priced at: $" + productsDataGridView.Rows[e.RowIndex].Cells[1].FormattedValue.ToString();
             }
+            nextButton.Enabled = true;
+            productsDataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         public void _storingValue()

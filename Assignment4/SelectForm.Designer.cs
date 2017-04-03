@@ -97,6 +97,7 @@
             // 
             // nextButton
             // 
+            this.nextButton.Enabled = false;
             this.nextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nextButton.Location = new System.Drawing.Point(590, 334);
             this.nextButton.Name = "nextButton";

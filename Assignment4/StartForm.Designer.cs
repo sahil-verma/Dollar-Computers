@@ -33,6 +33,7 @@
             this.newOrderButton = new System.Windows.Forms.Button();
             this.savedOrderButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
+            this.startOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,7 +65,7 @@
             this.newOrderButton.TabIndex = 2;
             this.newOrderButton.Text = "Start a New Order";
             this.newOrderButton.UseVisualStyleBackColor = true;
-            this.newOrderButton.Click += new System.EventHandler(this.newOrderButton_Click);
+            this.newOrderButton.Click += new System.EventHandler(this._newOrderButton_Click);
             // 
             // savedOrderButton
             // 
@@ -75,7 +76,7 @@
             this.savedOrderButton.TabIndex = 3;
             this.savedOrderButton.Text = "Open a Saved Order";
             this.savedOrderButton.UseVisualStyleBackColor = true;
-            this.savedOrderButton.Click += new System.EventHandler(this.savedOrderButton_Click);
+            this.savedOrderButton.Click += new System.EventHandler(this._savedOrderButton_Click);
             // 
             // exitButton
             // 
@@ -86,7 +87,11 @@
             this.exitButton.TabIndex = 4;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = true;
-            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            this.exitButton.Click += new System.EventHandler(this._exitButton_Click);
+            // 
+            // startOpenFileDialog
+            // 
+            this.startOpenFileDialog.FileName = "Product.txt";
             // 
             // StartForm
             // 
@@ -114,5 +119,6 @@
         private System.Windows.Forms.Button newOrderButton;
         private System.Windows.Forms.Button savedOrderButton;
         private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.OpenFileDialog startOpenFileDialog;
     }
 }
