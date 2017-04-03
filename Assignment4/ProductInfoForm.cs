@@ -17,13 +17,18 @@ namespace Assignment4
         //3. create a reference to the previous form
         public SelectForm firstForm;
 
-
+        //constructor
         public ProductInfoForm()
         {
             InitializeComponent();
 
         }
 
+        /// <summary>
+        /// event handler for reading the file and inserting the saved data into it
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _readFile(Object sender, EventArgs e)
         {
 
@@ -49,12 +54,22 @@ namespace Assignment4
 
         }
 
+        /// <summary>
+        /// event handler to get back to select form to choose other product
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _anotherProductButton_Click(object sender, EventArgs e)
         {
             firstForm.Show();
             this.Hide();
         }
 
+        /// <summary>
+        /// event handler to save the file and its value
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -74,11 +89,19 @@ namespace Assignment4
             }
         }
 
+        /// <summary>
+        /// event handler for closing the form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _cancelButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        /// <summary>
+        /// this method will get the values from the stored values in select form and put them in textboxes
+        /// </summary>
         public void storedValues()
         {
             productIDTextBox.Text = firstForm.stroingValues[0];
@@ -100,6 +123,11 @@ namespace Assignment4
             webCamTextBox.Text = firstForm.stroingValues[15];
         }
 
+        /// <summary>
+        /// event handler to go to the next form 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _nextButton_Click(object sender, EventArgs e)
         {
             //1. intantiate 

@@ -12,15 +12,23 @@ namespace Assignment4
 {
     public partial class SelectForm : Form
     {
+        // array for storing the values to send to another form
         public string[] stroingValues = new string[16];
         //3. create a reference to the previous form
         public StartForm previousForm;
 
+        //constructor
         public SelectForm()
         {
             InitializeComponent();
         }
 
+
+        /// <summary>
+        /// event handler for selection of a row and saving the three values to put it in a text box
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _productsDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (productsDataGridView.SelectedCells.Count > 0)
@@ -31,6 +39,10 @@ namespace Assignment4
             productsDataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
+
+        /// <summary>
+        /// a method for storing the values of selected row
+        /// </summary>
         public void _storingValue()
         {
             int rowindex = productsDataGridView.CurrentCell.RowIndex;
@@ -52,11 +64,22 @@ namespace Assignment4
             stroingValues[14] = productsDataGridView.Rows[rowindex].Cells[12].Value.ToString();
             stroingValues[15] = productsDataGridView.Rows[rowindex].Cells[30].Value.ToString();
         }
+
+        /// <summary>
+        /// event handler for closing the programme
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _cancelButton_click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        /// <summary>
+        /// event handler to connect to the local database for products table
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SelectForm_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'dollarComputersDataSet.products' table. You can move, or remove it, as needed.
@@ -64,6 +87,11 @@ namespace Assignment4
 
         }
 
+        /// <summary>
+        /// event handler to generate the next form and close this one
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _nextButton_Click(object sender, EventArgs e)
         {
             //1. intantiate 
