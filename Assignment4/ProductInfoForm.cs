@@ -37,6 +37,26 @@ namespace Assignment4
             this.Close();
         }
 
+        public void storedValues()
+        {
+            productIDTextBox.Text = firstForm.stroingValues[0];
+            conditionTextBox.Text = firstForm.stroingValues[1];
+            costTextBox.Text = firstForm.stroingValues[2];
+            platformTextBox.Text = firstForm.stroingValues[3];
+            osTextBox.Text = firstForm.stroingValues[4];
+            manufacturerTextBox.Text = firstForm.stroingValues[5];
+            modelTextBox.Text = firstForm.stroingValues[6];
+            memoryTextBox.Text = firstForm.stroingValues[7];
+            lcdSizeTextBox.Text = firstForm.stroingValues[8];
+            hddTextBox.Text = firstForm.stroingValues[9];
+            cpuBrandTextBox.Text = firstForm.stroingValues[10];
+            cpuNumberTextBox.Text = firstForm.stroingValues[11];
+            gpuTypeTextBox.Text = firstForm.stroingValues[12];
+            cpuTypeTextBox.Text = firstForm.stroingValues[13];
+            cpuSpeedTextBox.Text = firstForm.stroingValues[14];
+            webCamTextBox.Text = firstForm.stroingValues[15];
+        }
+
         private void _nextButton_Click(object sender, EventArgs e)
         {
             //1. intantiate 

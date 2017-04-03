@@ -39,36 +39,36 @@
             this.productIDLabel = new System.Windows.Forms.Label();
             this.conditionLabel = new System.Windows.Forms.Label();
             this.costLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.productIDTextBox = new System.Windows.Forms.TextBox();
+            this.conditionTextBox = new System.Windows.Forms.TextBox();
+            this.costTextBox = new System.Windows.Forms.TextBox();
             this.productInfoGroupBox = new System.Windows.Forms.GroupBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.modelTextBox = new System.Windows.Forms.TextBox();
+            this.manufacturerTextBox = new System.Windows.Forms.TextBox();
+            this.osTextBox = new System.Windows.Forms.TextBox();
             this.modelLabel = new System.Windows.Forms.Label();
             this.manufacturerLabel = new System.Windows.Forms.Label();
             this.OSLabel = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.platformTextBox = new System.Windows.Forms.TextBox();
             this.platformLabel = new System.Windows.Forms.Label();
             this.techSpecsGroupBox = new System.Windows.Forms.GroupBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.webCamTextBox = new System.Windows.Forms.TextBox();
             this.webCamLabel = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.cpuSpeedTextBox = new System.Windows.Forms.TextBox();
             this.CPUSpeedLabel = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.cpuTypeTextBox = new System.Windows.Forms.TextBox();
             this.CPUTypeLabel = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.gpuTypeTextBox = new System.Windows.Forms.TextBox();
             this.GPUTypeLabel = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.cpuNumberTextBox = new System.Windows.Forms.TextBox();
             this.CPUNumberLabel = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.cpuBrandTextBox = new System.Windows.Forms.TextBox();
             this.CPUBrandLabel = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.hddTextBox = new System.Windows.Forms.TextBox();
             this.HDDLabel = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.lcdSizeTextBox = new System.Windows.Forms.TextBox();
             this.sizeLabel = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.memoryTextBox = new System.Windows.Forms.TextBox();
             this.memoryLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.anotherProductButton = new System.Windows.Forms.Button();
@@ -170,42 +170,42 @@
             this.costLabel.Text = "Cost";
             this.costLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox1
+            // productIDTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(117, 41);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 4;
+            this.productIDTextBox.Location = new System.Drawing.Point(117, 41);
+            this.productIDTextBox.Multiline = true;
+            this.productIDTextBox.Name = "productIDTextBox";
+            this.productIDTextBox.ReadOnly = true;
+            this.productIDTextBox.Size = new System.Drawing.Size(100, 23);
+            this.productIDTextBox.TabIndex = 4;
             // 
-            // textBox2
+            // conditionTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(338, 41);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 5;
+            this.conditionTextBox.Location = new System.Drawing.Point(338, 41);
+            this.conditionTextBox.Multiline = true;
+            this.conditionTextBox.Name = "conditionTextBox";
+            this.conditionTextBox.ReadOnly = true;
+            this.conditionTextBox.Size = new System.Drawing.Size(100, 23);
+            this.conditionTextBox.TabIndex = 5;
             // 
-            // textBox3
+            // costTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(518, 38);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(100, 23);
-            this.textBox3.TabIndex = 6;
+            this.costTextBox.Location = new System.Drawing.Point(518, 38);
+            this.costTextBox.Multiline = true;
+            this.costTextBox.Name = "costTextBox";
+            this.costTextBox.ReadOnly = true;
+            this.costTextBox.Size = new System.Drawing.Size(100, 23);
+            this.costTextBox.TabIndex = 6;
             // 
             // productInfoGroupBox
             // 
-            this.productInfoGroupBox.Controls.Add(this.textBox7);
-            this.productInfoGroupBox.Controls.Add(this.textBox6);
-            this.productInfoGroupBox.Controls.Add(this.textBox5);
+            this.productInfoGroupBox.Controls.Add(this.modelTextBox);
+            this.productInfoGroupBox.Controls.Add(this.manufacturerTextBox);
+            this.productInfoGroupBox.Controls.Add(this.osTextBox);
             this.productInfoGroupBox.Controls.Add(this.modelLabel);
             this.productInfoGroupBox.Controls.Add(this.manufacturerLabel);
             this.productInfoGroupBox.Controls.Add(this.OSLabel);
-            this.productInfoGroupBox.Controls.Add(this.textBox4);
+            this.productInfoGroupBox.Controls.Add(this.platformTextBox);
             this.productInfoGroupBox.Controls.Add(this.platformLabel);
             this.productInfoGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.productInfoGroupBox.Location = new System.Drawing.Point(12, 82);
@@ -215,29 +215,29 @@
             this.productInfoGroupBox.TabStop = false;
             this.productInfoGroupBox.Text = "Prduct Info";
             // 
-            // textBox7
+            // modelTextBox
             // 
-            this.textBox7.Location = new System.Drawing.Point(326, 60);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(322, 22);
-            this.textBox7.TabIndex = 7;
+            this.modelTextBox.Location = new System.Drawing.Point(326, 60);
+            this.modelTextBox.Name = "modelTextBox";
+            this.modelTextBox.ReadOnly = true;
+            this.modelTextBox.Size = new System.Drawing.Size(322, 22);
+            this.modelTextBox.TabIndex = 7;
             // 
-            // textBox6
+            // manufacturerTextBox
             // 
-            this.textBox6.Location = new System.Drawing.Point(105, 60);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(100, 22);
-            this.textBox6.TabIndex = 6;
+            this.manufacturerTextBox.Location = new System.Drawing.Point(105, 60);
+            this.manufacturerTextBox.Name = "manufacturerTextBox";
+            this.manufacturerTextBox.ReadOnly = true;
+            this.manufacturerTextBox.Size = new System.Drawing.Size(100, 22);
+            this.manufacturerTextBox.TabIndex = 6;
             // 
-            // textBox5
+            // osTextBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(326, 17);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(322, 22);
-            this.textBox5.TabIndex = 5;
+            this.osTextBox.Location = new System.Drawing.Point(326, 17);
+            this.osTextBox.Name = "osTextBox";
+            this.osTextBox.ReadOnly = true;
+            this.osTextBox.Size = new System.Drawing.Size(322, 22);
+            this.osTextBox.TabIndex = 5;
             // 
             // modelLabel
             // 
@@ -266,13 +266,13 @@
             this.OSLabel.Text = "OS";
             this.OSLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox4
+            // platformTextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(105, 17);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 1;
+            this.platformTextBox.Location = new System.Drawing.Point(105, 17);
+            this.platformTextBox.Name = "platformTextBox";
+            this.platformTextBox.ReadOnly = true;
+            this.platformTextBox.Size = new System.Drawing.Size(100, 22);
+            this.platformTextBox.TabIndex = 1;
             // 
             // platformLabel
             // 
@@ -285,23 +285,23 @@
             // 
             // techSpecsGroupBox
             // 
-            this.techSpecsGroupBox.Controls.Add(this.textBox14);
+            this.techSpecsGroupBox.Controls.Add(this.webCamTextBox);
             this.techSpecsGroupBox.Controls.Add(this.webCamLabel);
-            this.techSpecsGroupBox.Controls.Add(this.textBox15);
+            this.techSpecsGroupBox.Controls.Add(this.cpuSpeedTextBox);
             this.techSpecsGroupBox.Controls.Add(this.CPUSpeedLabel);
-            this.techSpecsGroupBox.Controls.Add(this.textBox16);
+            this.techSpecsGroupBox.Controls.Add(this.cpuTypeTextBox);
             this.techSpecsGroupBox.Controls.Add(this.CPUTypeLabel);
-            this.techSpecsGroupBox.Controls.Add(this.textBox11);
+            this.techSpecsGroupBox.Controls.Add(this.gpuTypeTextBox);
             this.techSpecsGroupBox.Controls.Add(this.GPUTypeLabel);
-            this.techSpecsGroupBox.Controls.Add(this.textBox12);
+            this.techSpecsGroupBox.Controls.Add(this.cpuNumberTextBox);
             this.techSpecsGroupBox.Controls.Add(this.CPUNumberLabel);
-            this.techSpecsGroupBox.Controls.Add(this.textBox13);
+            this.techSpecsGroupBox.Controls.Add(this.cpuBrandTextBox);
             this.techSpecsGroupBox.Controls.Add(this.CPUBrandLabel);
-            this.techSpecsGroupBox.Controls.Add(this.textBox8);
+            this.techSpecsGroupBox.Controls.Add(this.hddTextBox);
             this.techSpecsGroupBox.Controls.Add(this.HDDLabel);
-            this.techSpecsGroupBox.Controls.Add(this.textBox9);
+            this.techSpecsGroupBox.Controls.Add(this.lcdSizeTextBox);
             this.techSpecsGroupBox.Controls.Add(this.sizeLabel);
-            this.techSpecsGroupBox.Controls.Add(this.textBox10);
+            this.techSpecsGroupBox.Controls.Add(this.memoryTextBox);
             this.techSpecsGroupBox.Controls.Add(this.memoryLabel);
             this.techSpecsGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.techSpecsGroupBox.Location = new System.Drawing.Point(12, 201);
@@ -311,14 +311,14 @@
             this.techSpecsGroupBox.TabStop = false;
             this.techSpecsGroupBox.Text = "Tech Specs";
             // 
-            // textBox14
+            // webCamTextBox
             // 
-            this.textBox14.Location = new System.Drawing.Point(506, 82);
-            this.textBox14.Multiline = true;
-            this.textBox14.Name = "textBox14";
-            this.textBox14.ReadOnly = true;
-            this.textBox14.Size = new System.Drawing.Size(143, 23);
-            this.textBox14.TabIndex = 23;
+            this.webCamTextBox.Location = new System.Drawing.Point(506, 82);
+            this.webCamTextBox.Multiline = true;
+            this.webCamTextBox.Name = "webCamTextBox";
+            this.webCamTextBox.ReadOnly = true;
+            this.webCamTextBox.Size = new System.Drawing.Size(143, 23);
+            this.webCamTextBox.TabIndex = 23;
             // 
             // webCamLabel
             // 
@@ -329,14 +329,14 @@
             this.webCamLabel.Text = "WebCam";
             this.webCamLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox15
+            // cpuSpeedTextBox
             // 
-            this.textBox15.Location = new System.Drawing.Point(326, 85);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.ReadOnly = true;
-            this.textBox15.Size = new System.Drawing.Size(100, 23);
-            this.textBox15.TabIndex = 22;
+            this.cpuSpeedTextBox.Location = new System.Drawing.Point(326, 85);
+            this.cpuSpeedTextBox.Multiline = true;
+            this.cpuSpeedTextBox.Name = "cpuSpeedTextBox";
+            this.cpuSpeedTextBox.ReadOnly = true;
+            this.cpuSpeedTextBox.Size = new System.Drawing.Size(100, 23);
+            this.cpuSpeedTextBox.TabIndex = 22;
             // 
             // CPUSpeedLabel
             // 
@@ -347,14 +347,14 @@
             this.CPUSpeedLabel.Text = "CPU Speed";
             this.CPUSpeedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox16
+            // cpuTypeTextBox
             // 
-            this.textBox16.Location = new System.Drawing.Point(105, 85);
-            this.textBox16.Multiline = true;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.ReadOnly = true;
-            this.textBox16.Size = new System.Drawing.Size(100, 23);
-            this.textBox16.TabIndex = 21;
+            this.cpuTypeTextBox.Location = new System.Drawing.Point(105, 85);
+            this.cpuTypeTextBox.Multiline = true;
+            this.cpuTypeTextBox.Name = "cpuTypeTextBox";
+            this.cpuTypeTextBox.ReadOnly = true;
+            this.cpuTypeTextBox.Size = new System.Drawing.Size(100, 23);
+            this.cpuTypeTextBox.TabIndex = 21;
             // 
             // CPUTypeLabel
             // 
@@ -365,14 +365,14 @@
             this.CPUTypeLabel.Text = "CPU Type";
             this.CPUTypeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox11
+            // gpuTypeTextBox
             // 
-            this.textBox11.Location = new System.Drawing.Point(506, 53);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(143, 23);
-            this.textBox11.TabIndex = 17;
+            this.gpuTypeTextBox.Location = new System.Drawing.Point(506, 53);
+            this.gpuTypeTextBox.Multiline = true;
+            this.gpuTypeTextBox.Name = "gpuTypeTextBox";
+            this.gpuTypeTextBox.ReadOnly = true;
+            this.gpuTypeTextBox.Size = new System.Drawing.Size(143, 23);
+            this.gpuTypeTextBox.TabIndex = 17;
             // 
             // GPUTypeLabel
             // 
@@ -383,14 +383,14 @@
             this.GPUTypeLabel.Text = "GPU Type";
             this.GPUTypeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox12
+            // cpuNumberTextBox
             // 
-            this.textBox12.Location = new System.Drawing.Point(326, 56);
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.ReadOnly = true;
-            this.textBox12.Size = new System.Drawing.Size(100, 23);
-            this.textBox12.TabIndex = 16;
+            this.cpuNumberTextBox.Location = new System.Drawing.Point(326, 56);
+            this.cpuNumberTextBox.Multiline = true;
+            this.cpuNumberTextBox.Name = "cpuNumberTextBox";
+            this.cpuNumberTextBox.ReadOnly = true;
+            this.cpuNumberTextBox.Size = new System.Drawing.Size(100, 23);
+            this.cpuNumberTextBox.TabIndex = 16;
             // 
             // CPUNumberLabel
             // 
@@ -401,14 +401,14 @@
             this.CPUNumberLabel.Text = "CPU Number";
             this.CPUNumberLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox13
+            // cpuBrandTextBox
             // 
-            this.textBox13.Location = new System.Drawing.Point(105, 54);
-            this.textBox13.Multiline = true;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.ReadOnly = true;
-            this.textBox13.Size = new System.Drawing.Size(100, 23);
-            this.textBox13.TabIndex = 15;
+            this.cpuBrandTextBox.Location = new System.Drawing.Point(105, 54);
+            this.cpuBrandTextBox.Multiline = true;
+            this.cpuBrandTextBox.Name = "cpuBrandTextBox";
+            this.cpuBrandTextBox.ReadOnly = true;
+            this.cpuBrandTextBox.Size = new System.Drawing.Size(100, 23);
+            this.cpuBrandTextBox.TabIndex = 15;
             // 
             // CPUBrandLabel
             // 
@@ -419,14 +419,14 @@
             this.CPUBrandLabel.Text = "CPU Brand";
             this.CPUBrandLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox8
+            // hddTextBox
             // 
-            this.textBox8.Location = new System.Drawing.Point(505, 18);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(143, 23);
-            this.textBox8.TabIndex = 11;
+            this.hddTextBox.Location = new System.Drawing.Point(505, 18);
+            this.hddTextBox.Multiline = true;
+            this.hddTextBox.Name = "hddTextBox";
+            this.hddTextBox.ReadOnly = true;
+            this.hddTextBox.Size = new System.Drawing.Size(143, 23);
+            this.hddTextBox.TabIndex = 11;
             // 
             // HDDLabel
             // 
@@ -437,14 +437,14 @@
             this.HDDLabel.Text = "HDD";
             this.HDDLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox9
+            // lcdSizeTextBox
             // 
-            this.textBox9.Location = new System.Drawing.Point(325, 21);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(100, 23);
-            this.textBox9.TabIndex = 10;
+            this.lcdSizeTextBox.Location = new System.Drawing.Point(325, 21);
+            this.lcdSizeTextBox.Multiline = true;
+            this.lcdSizeTextBox.Name = "lcdSizeTextBox";
+            this.lcdSizeTextBox.ReadOnly = true;
+            this.lcdSizeTextBox.Size = new System.Drawing.Size(100, 23);
+            this.lcdSizeTextBox.TabIndex = 10;
             // 
             // sizeLabel
             // 
@@ -455,14 +455,14 @@
             this.sizeLabel.Text = "LCD Size";
             this.sizeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox10
+            // memoryTextBox
             // 
-            this.textBox10.Location = new System.Drawing.Point(104, 21);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(100, 23);
-            this.textBox10.TabIndex = 9;
+            this.memoryTextBox.Location = new System.Drawing.Point(104, 21);
+            this.memoryTextBox.Multiline = true;
+            this.memoryTextBox.Name = "memoryTextBox";
+            this.memoryTextBox.ReadOnly = true;
+            this.memoryTextBox.Size = new System.Drawing.Size(100, 23);
+            this.memoryTextBox.TabIndex = 9;
             // 
             // memoryLabel
             // 
@@ -527,9 +527,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.techSpecsGroupBox);
             this.Controls.Add(this.productInfoGroupBox);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.costTextBox);
+            this.Controls.Add(this.conditionTextBox);
+            this.Controls.Add(this.productIDTextBox);
             this.Controls.Add(this.costLabel);
             this.Controls.Add(this.conditionLabel);
             this.Controls.Add(this.productIDLabel);
@@ -561,36 +561,36 @@
         private System.Windows.Forms.Label productIDLabel;
         private System.Windows.Forms.Label conditionLabel;
         private System.Windows.Forms.Label costLabel;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox productIDTextBox;
+        private System.Windows.Forms.TextBox conditionTextBox;
+        private System.Windows.Forms.TextBox costTextBox;
         private System.Windows.Forms.GroupBox productInfoGroupBox;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox modelTextBox;
+        private System.Windows.Forms.TextBox manufacturerTextBox;
+        private System.Windows.Forms.TextBox osTextBox;
         private System.Windows.Forms.Label modelLabel;
         private System.Windows.Forms.Label manufacturerLabel;
         private System.Windows.Forms.Label OSLabel;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox platformTextBox;
         private System.Windows.Forms.Label platformLabel;
         private System.Windows.Forms.GroupBox techSpecsGroupBox;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox webCamTextBox;
         private System.Windows.Forms.Label webCamLabel;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox cpuSpeedTextBox;
         private System.Windows.Forms.Label CPUSpeedLabel;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox cpuTypeTextBox;
         private System.Windows.Forms.Label CPUTypeLabel;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox gpuTypeTextBox;
         private System.Windows.Forms.Label GPUTypeLabel;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox cpuNumberTextBox;
         private System.Windows.Forms.Label CPUNumberLabel;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox cpuBrandTextBox;
         private System.Windows.Forms.Label CPUBrandLabel;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox hddTextBox;
         private System.Windows.Forms.Label HDDLabel;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox lcdSizeTextBox;
         private System.Windows.Forms.Label sizeLabel;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox memoryTextBox;
         private System.Windows.Forms.Label memoryLabel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button anotherProductButton;
